@@ -1,0 +1,131 @@
+.paginating-container {
+    justify-content: normal;
+}
+
+.bg-default {
+    background: #191e3a;
+    position: relative;
+}
+
+.layout-top-spacing {
+    background: #0e1726;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.rounded-10 {
+    border-radius: 8px;
+}
+
+.table-null {
+    padding: 20px !important;
+}
+
+tbody {
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.layout {
+    margin-top: 20px;
+    background: #0e1726;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.layout-title {
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.layout-content {
+    padding: 20px;
+    position: relative;
+    background: #0e1726;
+}
+
+.rooms .area .room {
+    display: block;
+    border-radius: 8px;
+    color: #FFF;
+    margin-top: 20px;
+    border: 5px solid transparent;
+    background: transparent;
+    overflow: hidden;
+}
+
+.room .room-bg {
+    background: url('../img/room.png') no-repeat center center;
+    background-size: cover;
+}
+
+.room .head {
+    height: 100px;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 8px 8px 0 0;
+}
+
+.room .head .price {
+    position: absolute;
+    width: 96px;
+    line-height: 96px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    top: -16px;
+    left: 16px;
+}
+
+.room .head .total {
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.room .head .total small {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.room .head .total span {
+    font-size: 1.7em;
+    display: block;
+    padding-top: 1px
+}
+
+.room .info {
+    padding: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(0, 0, 0, .4);
+    border-radius: 0 0 8px 8px;
+}
+
+.gifts {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: #0e2231;
+}
+
+.gifts .d-flex {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 8px 20px;
+}
+
+.gifts .d-flex:last-child {
+    border-bottom: 0;
+}
+
+.prizes .prize {
+    padding: 7px;
+    text-align: center;
+    width: 25%;
+    font-size: 12px;
+}
+
+.prizes .prize b {
+    display: block;
+    font-size: 1.2rem;
+}
