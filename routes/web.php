@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+URL::forceScheme('https');
+
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/', ['as' => 'home', 'uses' => 'App\Http\Controllers\HomeController@index']);
     Route::get('/p/{page}', ['as' => 'page', 'uses' => 'App\Http\Controllers\HomeController@page']);
