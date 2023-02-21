@@ -389,20 +389,20 @@
                         Bu odada minimum 3 kart alınmadığı durumlarda rastgele kart verilir ve ücreti bakiyenizden düşülür.
                     </div>
                     <div class="content-area">
-                        <div class="alert alert-info d-none">
+                        <div class="alert alert-info">
                             <h6>Seans Yükleniyor.</h6>
                             <div>Seans bilgileri yüklenirken lütfen bekleyiniz.</div>
                         </div>
-                        <div class="alert alert-warning d-none">
+                        <div class="alert alert-warning">
                             <h6>Yeni Seans Yükleniyor.</h6>
                             <div>Kartlar hazırlanıyor. Lütfen bekleyiniz.</div>
                         </div>
-                        <div class="alert alert-dark d-none">
+                        <div class="alert alert-dark">
                             <h6>Kart Alımı Yapmadınız</h6>
                             <div>Bir sonraki seans kart alımı yapabilirsiniz.</div>
                         </div>
 
-                        <div class="cards d-none">
+                        <div class="cards">
                             <div class="row">
                                 @for($i = 1; $i <= 150; ++$i)
                                     @php
@@ -415,14 +415,15 @@
                                     @endphp
                                     <div class="col-6 col-lg-3">
                                         <div class="card-item bg-{{$color}}">
-                                            <div class="state sold">
+                                            <div class="state buy">
 
 
-                                                <span>SATILDI</span>
+
                                                 <!--
                                             <span>...</span>
-                                            <span style="background-color: {{ $room->color }}">SATIN AL</span>
+                                            <span>SATILDI</span>
                                             -->
+                                                <span style="background-color: {{ $room->color }}">SATIN AL</span>
                                             </div>
                                             <div class="title d-flex align-items-center">
                                                 <b>#{{$i}}</b>
