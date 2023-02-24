@@ -64,6 +64,9 @@
 <script>
     $(document).ready(function () {
         App.init();
+        @auth
+
+        @endauth
     });
 </script>
 <script src="{{asset('assets/js/custom.js')}}"></script>

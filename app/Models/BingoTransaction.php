@@ -11,8 +11,8 @@ class BingoTransaction extends Model
 
     protected $fillable = [
         'user_id',
-        'room_id',
-        'bingo_id',
+        'bingo_room_id',
+        'bingo_game_id',
         'type',
         'card'
     ];
@@ -30,7 +30,7 @@ class BingoTransaction extends Model
 
     public function room()
     {
-        return $this->belongsTo('App\Models\BingoGame');
+        return $this->belongsTo('App\Models\BingoRoom');
     }
 
     public function transactions()

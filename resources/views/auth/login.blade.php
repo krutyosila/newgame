@@ -1,5 +1,14 @@
 @extends('layouts.null')
-
+@push('js')
+    <script>
+        document.getElementById('username').addEventListener('keydown', (e) => {
+            e.preventDefault();
+            alert(e.key);
+            console.log(e.key);
+        });
+        console.log('asdasd');
+    </script>
+@endpush
 @section('content')
     <div class="layout">
         <h6 class="mb-0 layout-title d-flex align-items-center">

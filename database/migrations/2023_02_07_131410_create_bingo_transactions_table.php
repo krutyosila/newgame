@@ -16,15 +16,15 @@ return new class extends Migration
         Schema::create('bingo_transactions', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('room_id');
-            $table->unsignedBigInteger('bingo_id');
+            $table->unsignedBigInteger('bingo_room_id');
+            $table->unsignedBigInteger('bingo_game_id');
             $table->enum('type', ['normal', 'auto', 'last'])->default('normal');
             $table->unsignedBigInteger('card');
             $table->timestamps();
-            $table->unique(['bingo_id', 'room_id', 'card']);
+            $table->unique(['bingo_game_id', 'bingo_room_id', 'card']);
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('room_id')->references('id')->on('bingo_rooms')->onDelete('cascade');
-            $table->foreign('bingo_id')->references('id')->on('bingo_games')->onDelete('cascade');
+            $table->foreign('bingo_room_id')->references('id')->on('bingo_rooms')->onDelete('cascade');
+            $table->foreign('bingo_game_id')->references('id')->on('bingo_games')->onDelete('cascade');
         });
     }
 

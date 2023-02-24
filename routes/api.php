@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::group(['prefix' => 'bingo', 'as' => 'bingo.'], function () {
+    Route::get('room/{id}', ['as' => 'histories', 'uses' => 'App\Http\Controllers\Api\BingoGameController@room']);
+});

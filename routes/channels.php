@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Broadcast;
 |
 */
 
-Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
-    return (int) $user->id === (int) $id;
+Broadcast::channel('', function () {
+    return 'hello';
+});
+
+
+Broadcast::channel('play.{roomId}', function (int $roomId) {
+    return \App\Models\BingoRoom::findOrFail($roomId);
 });

@@ -32,6 +32,7 @@
         App.init();
     });
 </script>
+@stack('js')
 <script src="{{asset('assets/js/custom.js')}}"></script>
 </body>
 </html>
